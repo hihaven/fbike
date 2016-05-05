@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FBike</title>
+    <link href="../../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../../bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="../../js/myjs.js"></script>
+</head>
+
+<body>
+    <!-- 弹出层开始 -->
+    <div id="light" class="white_content">
+        <div class="close"><a href="javascript:void(0)" onclick="hide('light')"> 关闭</a></div>
+        <div class="con">
+            <iframe scrolling="no" src="gouwuche.html" style="height:400px;width:650px;border:0;"></iframe>
+        </div>
+    </div>
+    <div id="light2" class="white_content1">
+        <div class="close"><a href="javascript:void(0)" onclick="hide('light2')"> 关闭</a></div>
+        <div class="con">
+            <!--<form class="logintanchu">
+                <table style="position:relative;left:30px">
+                    <tr><td></td><td style="text-align:center">登陆</td><td></td></tr>
+                    <tr><td>用户名：</td><td><input id="Text1" type="text"/></td></tr>
+                    <tr><td>密码：</td><td><input id="Password1" type="password" /></td></tr>
+                </table>
+                
+                <br>
+                <input id="Submit1" type="submit" value="登陆" style="position:relative;left:170px;" class="btn btn-primary"/>
+            </form>-->
+            <div class="container" style="height:200px;width:300px;">
+                <form class="form-signin">
+                    <h2 class="form-signin-heading">登陆</h2>
+                    <label class="sr-only" for="inputEmail">账户号</label>
+                    <input class="form-control" id="inputEmail" autofocus="" required="" type="email" placeholder="用户名">
+                    <label class="sr-only" for="inputPassword">密码</label>
+                    <input class="form-control" id="inputPassword" required="" type="password" placeholder="密码">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me"> 记住账号
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">确认</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+    <!-- 弹出层结束 -->
+    <div class="index">
+        <div class="headerWrapper">
+            <div class="headerlogin">
+                 <!--弹出层调用--> 
+                <a href="javascript:void(0)" onclick="show('light2')">登录</a>
+                <a href="register.html" target="iframe01">注册</a>
+                
+                <a href="GeRenZhongXing.html" target="iframe01">个人中心</a>
+                <a href="javascript:void(0)" onclick="show('light')">购物车</a>
+            </div>
+        </div>
+        
+        <div class="nvbar01">
+            <div class="nvbar01_1">
+                <a href="xuanche.html" target="iframe01">选车</a>
+                <a href="xuanshangpu.html" target="iframe01">挑选商铺</a>
+                <!--<a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>-->
+            </div>
+            <div class="nvbar01_1_1">
+                <input type="search" id="1">
+                <input type="button" value="搜索" class="btn btn-sm btn-primary">
+            </div>
+        </div>
+        
+        <div class="zhuti">            
+            <div class="gonggao01">
+                <div class="gonggao01_1">
+                    <h2>达人选购</h2>
+                </div>
+                <div class="gonggao01_2">
+                    <ul>
+                        <li class="gonggao01_2_1">
+                            <img src="../../img/03.png">
+                            <a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+                        </li>
+                        <li class="gonggao01_2_1">
+                            <img src="../../img/03.png">
+                            <a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+                        </li>
+                        <li class="gonggao01_2_1">
+                            <img src="../../img/03.png">
+                            <a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+                        </li>
+                        <li class="gonggao01_2_1">
+                            <img src="../../img/03.png">
+                            <a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <iframe name="iframe01" class="iframe01" scrolling="no" src="xuanche.html"></iframe>
+           
+        </div>
+
+
+    </div>
+</body>
+</html>

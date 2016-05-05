@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title></title>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+    <meta name="vs_targetSchema"
+          content="http://schemas.microsoft.com/intellisense/ie5">
+    <script type="text/javascript">
+function test(Url)
+{
+    document.frames[xx].location.href = Url;
+    parent.document.getElementById("xx").src = 'http://www.baidu.com';
+    parent.location.reload();
+}
+    </script>
+</head>
+<body>
+    <iframe id="xx" src=""></iframe>
+    <a href="index.jsp" target="xx">linkbutton</a>
+</body>
+</html>
