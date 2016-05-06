@@ -8,6 +8,7 @@ public class User {
 	private String UserPwd;
 	private String UserAddress;
 	private String UserImage;
+	private int UserBikenum;
 	public int getId() {
 		return id;
 	}
@@ -50,5 +51,11 @@ public class User {
 	public void setUserImage(String userImage) {
 		UserImage = userImage;
 	}
-
+	public int getUserBikenum() {
+		return UserBikenum;
+	}
+	public void setUserBikenum(int userBikenum) {
+		UserBikenum = userBikenum;
+	}
+	
 }

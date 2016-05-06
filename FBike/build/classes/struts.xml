@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>	
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+      
+    <!-- 用户管理 -->
+    <package name="userManage" namespace="/" extends="struts-default">
+	   <!-- 登录 -->
+	  <action name="login" class="action.UserAction" method="login">
+            <result name="success">index.jsp</result>
+            <result name="fail">error.jsp</result>
+	  </action>
+	  
+	  <!-- 退出 -->
+	  <action name="logout" class="action.UserAction" method="logout">
+	      <result name="success">index.jsp</result>	
+	      <result name="fail">error.jsp</result>      
+	  </action>
+	  
+	  <!-- 注册 -->
+	  <action name="register" class="action.register" method="regist">
+	      <result name="error">error.jsp</result>
+	      <result name="success">/index.jsp</result>
+	  </action>
+    </package>
+
+     
+     <!-- 图书管理 -->
+     <package name="bookManage" namespace="/" extends="struts-default">
+        <!-- 定义拦截器 -->   
+        <interceptors>
+			<!-- 定义一个名为authorityInterceptor 的拦截器 -->
+			<interceptor name="authorityInterceptor" class="util.AuthorityInterceptor" />
+			
+			<!-- 定义一个 名为 myInterceptorStack 的拦截器栈 -->
+			<interceptor-stack name="myInterceptorStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="authorityInterceptor"></interceptor-ref>				
+			</interceptor-stack>		
+		</interceptors>			
+		
+		<!-- 全局跳转，凡名为 authorityError的都跳转到 authoriyError.jsp -->
+		<global-results>
+			<result name="authorityError">/pages/authorityError.jsp</result>
+		</global-results>         
+		
+		
+		<!-- 展示图书类型 -->
+		<action name="showBookTypeMenu" class="action.BookAction" method="preAllBookType">
+             <result name="success">/pages/index.jsp</result>
+         </action>		
+		
+		<!-- 根据所选图书类型，准备相应图书数据，进行展示 -->
+		<action name="preBooks" class="action.BookAction" method="preBooks">
+		    <result name="success">/pages/showBooks.jsp</result>
+		</action>		
+		
+		<!-- 加入购物车 -->
+        <action name="addToCar" class="action.CarAction" method="addToCar">
+          	<result name="success" type="chain">
+          	   <param name="actionName">preBooks</param>
+          	   <param name="namespace">/</param>
+			</result>
+			
+			<!-- 配置自定义拦截器栈myInterceptorStack，配置在 result 之后 -->
+			<interceptor-ref name="myInterceptorStack"></interceptor-ref>
+		</action>         
+     </package>
+     <!-- Add packages here -->
+
+</struts>

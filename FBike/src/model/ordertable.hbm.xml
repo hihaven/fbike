@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.ordertable" table="ordertable" catalog="db_fbike">
+    <!-- 订单ID-->
+        <id name="OrderId" type="java.lang.Integer">
+            <column name="OrderId" />
+            <generator class="native"></generator>
+        </id>
+      <!-- 订单号-->
+        <property name="OrderNum" type="java.lang.Integer">
+            <column name="OrderNum" length="20" not-null="false" />
+        </property>
+        <!-- 订单时间-->
+        <property name="OrderTime" type="java.lang.date">
+            <column name="OrderTime" length="20" not-null="true" />
+        </property>
+        <!--订单用户id-->
+        <property name="OrderUserid" type="java.lang.Integer">
+            <column name="OrderUserid" not-null="true" />
+        </property>
+        <!-- 订单商铺id-->
+        <property name="OrderShopid" type="java.lang.Integer">
+            <column name="OrderShopid" not-null="true" />
+        </property>
+        <!-- 订单车辆id-->
+        <property name="OrderBikeid" type="java.lang.Integer">
+            <column name="OrderBikeid" not-null="true" />
+        </property>
+        <!-- 提车时间断段-->
+        <property name="OrderTimetotime" type="java.lang.date">
+            <column name="OrderTimetotime" not-null="true" />
+        </property>
+        <!-- 订单备注 -->
+        <property name="OrderRemark" type="java.lang.String">
+            <column name="OrderRemark" not-null="true" />
+        </property>
+        <!-- 订单状态-->
+         <property name="OrderStatic" type="java.lang.Integer">
+            <column name="OrderStatic" not-null="true" />
+        </property>
+        
+        
+    </class>
+</hibernate-mapping>

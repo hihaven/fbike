@@ -1,3 +1,5 @@
+<%@page import="action.UserAction"%>
+<%@page import="action.BookAction"%>
 <%@page import="javax.servlet.http.HttpSession"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>

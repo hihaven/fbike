@@ -1,7 +1,4 @@
+/model/
 /action/
 /dao/
-/hibernate.cfg.xml
-/model/
 /service/
-/struts.xml
-/util/
