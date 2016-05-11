@@ -1,5 +1,4 @@
 <%@page import="action.UserAction"%>
-<%@page import="action.BookAction"%>
 <%@page import="javax.servlet.http.HttpSession"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -123,7 +122,7 @@
         
         <div class="nvbar01">
             <div class="nvbar01_1">
-                <a href="xuanche.html" target="iframe01">选车</a>
+                <a href="xuanche.jsp" target="iframe01">选车</a>
                 <a href="xuanshangpu.html" target="iframe01">挑选商铺</a>
                 <!--<a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>-->
             </div>
