@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.User" table="usertable" catalog="db_fbike">
+    <!-- id -->
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="native"></generator>
+        </id>
+        <!-- 用户名 -->
+        <property name="UserName" type="java.lang.String">
+            <column name="UserName" length="20" not-null="true" />
+        </property>
+        <!-- 用户编号 -->
+        <property name="UserMum" type="java.lang.Integer">
+            <column name="UserMum" length="20" not-null="true" />
+        </property>
+        <!-- 用户角色 -->
+        <property name="UserRole" type="java.lang.Integer">
+            <column name="UserRole" not-null="true" />
+        </property>
+        <!-- 用户密码 -->
+        <property name="UserPwd" type="java.lang.String">
+            <column name="UserPwd" not-null="true" />
+        </property>
+        <!-- 用户地址 -->
+        <property name="UserAddress" type="java.lang.String">
+            <column name="UserAddress" not-null="true" />
+        </property>
+        <!-- 用户头像 -->
+        <property name="UserImage" type="java.lang.String">
+            <column name="UserImage" not-null="true" />
+        </property>
+        <!-- 用户车辆编号 -->
+        
+    </class>
+</hibernate-mapping>

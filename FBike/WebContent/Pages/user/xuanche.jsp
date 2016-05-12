@@ -1,0 +1,140 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="../../css/index.css" rel="stylesheet" type="text/css">
+
+<!-- Loading Bootstrap -->
+<link
+	href="../../Flat-UI-master/dist/css/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Loading Flat UI -->
+<link href="../../Flat-UI-master/dist/css/flat-ui.css" rel="stylesheet">
+<link href="../../Flat-UI-master/docs/assets/css/demo.css"
+	rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico">
+<!-- loading flat-ui  js -->
+<script src="../../Flat-UI-master/dist/js/vendor/jquery.min.js"></script>
+<script src="../../Flat-UI-master/dist/js/vendor/video.js"></script>
+<script src="../../Flat-UI-master/dist/js/flat-ui.min.js"></script>
+<script src="../../Flat-UI-master/docs/assets/js/application.js"></script>
+</head>
+<body>
+
+	<div class="xuanche1">
+
+		<div class="xuanche2" style="height: 100px;">
+
+			<table width="500">
+				<tr>
+					<td><label>车类型：</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup1" value="山地车" id="CheckboxGroup1_0">
+							山地车
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup1" value="公路车" id="CheckboxGroup1_1">
+							公路车
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup1" value="死飞" id="CheckboxGroup1_2">
+							死飞
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup1" value="淑女车" id="CheckboxGroup1_3">
+							淑女车
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup1" value="通勤车" id="CheckboxGroup1_3">
+							通勤车
+					</label></td>
+
+				</tr>
+				<tr>
+					<td><label>车品牌：</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup2" value="捷安特" id="CheckboxGroup2_1">
+							捷安特
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup2" value="凤凰" id="CheckboxGroup2_2">
+							凤凰
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup2" value="永久" id="CheckboxGroup2_3">
+							永久
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup2" value="喜德盛" id="CheckboxGroup2_4">
+							喜德盛
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup2" value="洛克菲勒" id="CheckboxGroup2_5">
+							洛克菲勒
+					</label></td>
+
+				</tr>
+				<tr>
+					<td><label>轮组尺寸：</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup3" value="16寸" id="CheckboxGroup3_1">
+							16寸
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup3" value="20寸" id="CheckboxGroup3_2">
+							20寸
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup3" value="22寸" id="CheckboxGroup3_3">
+							22寸
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup3" value="24寸" id="CheckboxGroup3_4">
+							24寸
+					</label></td>
+					<td><label> <input type="checkbox"
+							name="CheckboxGroup3" value="26寸" id="CheckboxGroup3_5">
+							26寸
+					</label></td>
+					<td><button style="width:80px;">提交</button></td>
+				</tr>
+			</table>
+		</div>
+		<div class="xuanche3">
+			<ul>
+				<li class="zhutixianshi_1_1"><img src="../../img/03.png"
+					style="left: 4px;" /><br /> <label><a
+						href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a></label>
+					<button class="btn btn-default">加入购物车</button></li>
+				<li class="zhutixianshi_1_1"><img src="../../img/03.png"
+					style="left: 30px;" /> <br /> <a href="cheLiangXiangYe.html"
+					target="iframe01">查看这辆车</a>
+					<button class="btn btn-default">加入购物车</button></li>
+				<li class="zhutixianshi_1_1"><img src="../../img/03.png" /> <br />
+					<a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+					<button class="btn btn-default">加入购物车</button></li>
+
+				<li class="zhutixianshi_1_1"><img src="../../img/03.png" /> <br />
+					<a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+					<button class="btn btn-default">加入购物车</button></li>
+				<li class="zhutixianshi_1_1"><img src="../../img/03.png" /> <br />
+					<a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+					<button class="btn btn-default">加入购物车</button></li>
+				<li class="zhutixianshi_1_1"><img src="../../img/03.png" /> <br />
+					<a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+					<button class="btn btn-default">加入购物车</button></li>
+				<li class="zhutixianshi_1_1"><img src="../../img/03.png" /> <br />
+					<a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+					<button class="btn btn-default">加入购物车</button></li>
+				<li class="zhutixianshi_1_1"><img src="../../img/03.png" /> <br />
+					<a href="cheLiangXiangYe.html" target="iframe01">查看这辆车</a>
+					<button class="btn btn-default">加入购物车</button></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
