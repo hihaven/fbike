@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.shoptable" table="shoptable" catalog="db_fbike">
+    <!-- 商铺id -->
+        <id name="ShopId" type="java.lang.Integer">
+            <column name="ShopId" />
+            <generator class="native"></generator>
+        </id>
+      <!-- 商铺编号-->
+        <property name="ShopNum" type="java.lang.Integer">
+            <column name="ShopNum" length="20" not-null="true" />
+        </property>
+        <!-- 商铺地址-->
+        <property name="ShopAddress" type="java.lang.String">
+            <column name="ShopAddress" length="20" not-null="true" />
+        </property>
+        <!-- 商铺车辆 -->
+        <property name="ShopBike" type="java.lang.Integer">
+            <column name="ShopBike" not-null="true" />
+        </property>
+        <!-- 商铺电话 -->
+        <property name="ShopTel" type="java.lang.Integer">
+            <column name="ShopTel" not-null="true" />
+        </property>
+        <!-- 商铺名称-->
+        <property name="ShopName" type="java.lang.String">
+            <column name="ShopName" not-null="true" />
+        </property>
+        <!-- 商铺备注 -->
+        <property name="ShopRemark" type="java.lang.String">
+            <column name="ShopRemark" not-null="true" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="model.bosstable" table="bosstable" catalog="db_fbike">
+    <!-- 老板id -->
+        <id name="Bossid" type="java.lang.Integer">
+            <column name="Bossid" />
+            <generator class="native"></generator>
+        </id>
+      <!-- 老板姓名-->
+        <property name="BossName" type="java.lang.String">
+            <column name="BossName" length="20" not-null="false" />
+        </property>
+        <!-- 老板电话号码-->
+        <property name="BossTel" type="java.lang.Integer">
+            <column name="BossTel" length="20" not-null="true" />
+        </property>
+        <!--老板编号 -->
+        <property name="BossNum" type="java.lang.Integer">
+            <column name="BossNum" not-null="true" />
+        </property>
+        <!-- 老板密码 -->
+        <property name="BossPwd" type="java.lang.String">
+            <column name="BossPwd" not-null="true" />
+        </property>
+        <!-- 老板地址-->
+        <property name="BossAddress" type="java.lang.String">
+            <column name="BossAddress" not-null="true" />
+        </property>
+        <!-- 老板头像 -->
+        <property name="BossImage" type="java.lang.String">
+            <column name="BossImage" not-null="true" />
+        </property>
+        <!-- 老板店铺 -->
+        <property name="BossShops01" type="java.lang.String">
+            <column name="BossShops01" not-null="true" />
+        </property>
+         <property name="BossShops02" type="java.lang.String">
+            <column name="BossShops02" not-null="true" />
+        </property>
+         <property name="BossShops03" type="java.lang.String">
+            <column name="BossShops03" not-null="true" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

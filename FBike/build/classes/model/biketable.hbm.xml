@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="biketable" table="biketable" catalog="db_fbike">
+    <!-- 自行车id -->
+        <id name="BikeId" type="java.lang.Integer">
+            <column name="BikeId" />
+            <generator class="native"></generator>
+        </id>
+      <!-- 自行车编号-->
+        <property name="BikeNum" type="java.lang.Integer">
+            <column name="BikeNum" length="20" not-null="true" />
+        </property>
+        <!-- 自行车地址-->
+        <property name="BikeBrand" type="java.lang.String">
+            <column name="BikeBrand" length="20" not-null="true" />
+        </property>
+        <!--自行车大小 -->
+        <property name="BikeSize" type="java.lang.Integer">
+            <column name="BikeSize" not-null="true" />
+        </property>
+        <!-- 自行车类型 -->
+        <property name="BikeType" type="java.lang.Integer">
+            <column name="BikeType" not-null="true" />
+        </property>
+        <!-- 自行车状态-->
+        <property name="BikeState" type="java.lang.Integer">
+            <column name="BikeState" not-null="true" />
+        </property>
+        <!-- 自行车安全 -->
+        <property name="BikeHealth" type="java.lang.String">
+            <column name="BikeHealth" not-null="true" />
+        </property>
+        <!-- 自行车颜色-->
+        <property name="BikeColor" type="java.lang.String">
+            <column name="BikeColor" not-null="true" />
+        </property>
+         <!-- 自行车价格-->
+        <property name="BikeMoney" type="java.lang.Integer">
+            <column name="BikeMoney" not-null="true" />
+        </property>
+         <!-- 自行车评价-->
+        <property name="BikeLevel" type="java.lang.String">
+            <column name="BikeLevel" not-null="true" />
+        </property>
+         <!-- 自行车备注-->
+        <property name="BikeRemark" type="java.lang.String">
+            <column name="BikeRemark" not-null="true" />
+        </property>
+        <!-- 自行车租车价格-->
+        <property name="BikeRentprice" type="java.lang.Integer">
+            <column name="BikeRentprice" not-null="true" />
+        </property>
+        <!-- 自行车级别-->
+        <property name="BikeRank" type="java.lang.Integer">
+            <column name="BikeRank" not-null="true" />
+        </property>
+        <!-- 自行车图片-->
+        <property name="BikeImage01" type="java.lang.String">
+            <column name="BikeImage01" not-null="true" />
+        </property>
+      
+        <property name="BikeImage02" type="java.lang.String">
+            <column name="BikeImage02" not-null="true" />
+        </property>
+        
+        <property name="BikeImage03" type="java.lang.String">
+            <column name="BikeImage03" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
